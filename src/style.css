@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Variables */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo básico para los enlaces */
+a, ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Estilos para la lista de comidas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+  /* Herencia usando @extend */
+}
+ul li a {
+  /* El estilo de "a" se aplicará también a "a" dentro de "li" */
+}
+ul li:hover {
+  color: #6c757d;
+}
+
+/* Estilos para las imágenes de las comidas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
