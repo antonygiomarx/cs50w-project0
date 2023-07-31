@@ -3,12 +3,40 @@
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
 }
 
 /* Estilo básico para los enlaces */
-a, ul li a {
+a {
   text-decoration: none;
   color: #007bff;
+}
+
+a:hover {
+  color: #6c757d;
+}
+
+/* Estilos para el encabezado de la página */
+header {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
 }
 
 /* Estilos para la lista de comidas */
@@ -16,27 +44,32 @@ ul {
   list-style: none;
   padding: 0;
 }
-ul li {
-  margin: 10px 0;
-  /* Herencia usando @extend */
-}
-ul li a {
-  /* El estilo de "a" se aplicará también a "a" dentro de "li" */
-}
-ul li:hover {
-  color: #6c757d;
+
+li {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para las imágenes de las comidas */
 img {
   max-width: 100%;
   height: auto;
+  max-height: 300px;
+  display: block;
+  margin: 10px auto;
 }
 
 /* Estilos responsivos para pantallas más pequeñas */
 @media (max-width: 768px) {
   h1 {
     font-size: 24px;
+  }
+  img {
+    max-height: 200px;
   }
 }
 
