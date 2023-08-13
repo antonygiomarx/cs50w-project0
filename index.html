@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <meta charset="UTF-8"/>
     <title>Mis Comidas Favoritas</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Mis Comidas Favoritas</h1>
-    <ul>
-      <li><a href="comida1.html">Comida 1 - Pizza</a></li>
-      <li><a href="comida2.html">Comida 2 - Carne Asada</a></li>
-      <li><a href="comida3.html">Comida 3 - Pollo Frito</a></li>
-    </ul>
-  </body>
+    <link
+            crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="container row">
+    <h1 class="col-12 text-center mt-4">Mis Comidas Favoritas</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarNav"
+                    data-bs-toggle="collapse"
+                    type="button"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comida1.html">Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comida2.html">Carne Asada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comida3.html">Pollo Frito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <div class="col">
+            <div class="card">
+                <img alt="Pizza" class="card-img-top" src="./static/pizza.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Comida 1 - Pizza</h5>
+                    <p class="card-text">
+                        La pizza es uno de mis platillos favoritos de todos los tiempos. Me
+                        encanta la combinación de sabores y la versatilidad que ofrece. Desde una
+                        clásica Margherita
+                    </p>
+                    <a class="btn btn-primary" href="comida1.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img alt="Carne asada" class="card-img-top" src="./static/carne_asada.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Comida 2 - Carne Asada</h5>
+                    <p class="card-text">
+                        La carne asada es un platillo que se prepara con carne
+                        de res, cerdo o pollo, y se cocina a la parrilla. Es un platillo muy
+                        popular en las fiestas y reuniones familiares.
+                    </p>
+                    <a class="btn btn-primary" href="comida2.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img alt="Pollo frito" class="card-img-top" src="./static/pollo_frito.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Comida 3 - Pollo Frito</h5>
+                    <p class="card-text">
+                        El pollo frito es un plato que consiste en pollo rebozado en una mezcla de harina, especias y
+                        hierbas, y luego frito en aceite vegetal.
+                    </p>
+                    <a class="btn btn-primary" href="comida3.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script
+        crossorigin="anonymous"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+></script>
+</body>
 </html>

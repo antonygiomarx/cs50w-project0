@@ -1,15 +1,11 @@
-/* Variables */
 $primary-color: #007bff;
 $secondary-color: #6c757d;
 
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #f7f7f7;
   margin: 0;
   padding: 20px;
-  background-color: #f7f7f7;
-  color: #333;
 }
 
 h1 {
@@ -18,30 +14,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* Estilo básico para los enlaces */
-a {
-  text-decoration: none;
-  color: $primary-color;
-}
-
-a:hover {
-  color: $secondary-color;
-}
-
-/* Estilos para el encabezado de la página */
-header {
-  background-color: $primary-color;
-  padding: 10px;
-  text-align: center;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 36px;
-  margin: 0;
-}
-
-/* Estilos para la lista de comidas */
 ul {
   list-style: none;
   padding: 0;
@@ -56,8 +28,19 @@ li {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para las imágenes de las comidas */
-img {
+.custom-item {
+  display: grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.custom-heading {
+  font-size: 24px;
+  color: #555;
+}
+
+.custom-image {
   max-width: 100%;
   height: auto;
   max-height: 300px;
@@ -65,13 +48,50 @@ img {
   margin: 10px auto;
 }
 
-/* Estilos responsivos para pantallas más pequeñas */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
+@media screen {
+  .custom-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    margin: 10px auto;
   }
-  
-  img {
-    max-height: 200px;
+
+  .custom-heading {
+    font-size: 24px;
+    color: #555;
+  }
+
+  .custom-item {
+    display: grid;
+    display: grid;
+    place-items: center;
+  }
+
+  li {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
   }
 }
